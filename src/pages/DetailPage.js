@@ -17,6 +17,7 @@ const styles = {
 
 export const DetailPage = () => {
 	const { pokemon, nextPokemon, previousPokemon } = useSelector((state) => state.pokemons.pokemon);
+	console.log(pokemon, 	nextPokemon, previousPokemon);
 	const { id } = useParams();
 	const dispatch = useDispatch();
 	useEffect(() => {
